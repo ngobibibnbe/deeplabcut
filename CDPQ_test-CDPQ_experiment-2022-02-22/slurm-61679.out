@@ -1,0 +1,13 @@
+DLC loaded in light mode; you cannot use any GUI (labeling, relabeling and standalone GUI)
+Traceback (most recent call last):
+  File "test_deeplabcut.py", line 43, in <module>
+    deeplabcut.create_labeled_video(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/make_labeled_video.py", line 486, in create_labeled_video
+    Videos = auxiliaryfunctions.Getlistofvideos(videos, videotype)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/auxiliaryfunctions.py", line 326, in Getlistofvideos
+    if [os.path.isdir(i) for i in videos] == [True]:  # checks if input is a directory
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/auxiliaryfunctions.py", line 326, in <listcomp>
+    if [os.path.isdir(i) for i in videos] == [True]:  # checks if input is a directory
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/genericpath.py", line 42, in isdir
+    st = os.stat(s)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not list

@@ -1,0 +1,405 @@
+DLC loaded in light mode; you cannot use any GUI (labeling, relabeling and standalone GUI)
+/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/labeled-data/GR77_20200512_111309/CollectedData_CDPQ_experiment.h5  not found (perhaps not annotated).
+Utilizing the following graph: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
+Creating training data for: Shuffle: 1 TrainFraction:  0.95
+  0%|          | 0/100 [00:00<?, ?it/s] 23%|██▎       | 23/100 [00:00<00:00, 207.97it/s] 62%|██████▏   | 62/100 [00:00<00:00, 308.85it/s] 96%|█████████▌| 96/100 [00:00<00:00, 321.78it/s]100%|██████████| 100/100 [00:00<00:00, 299.97it/s]
+Config:
+{'all_joints': [[0], [1], [2], [3], [4]],
+ 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 8,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': True,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 5,
+ 'num_limbs': 10,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [2, 3],
+                             [2, 4],
+                             [3, 4]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-04-19 11:31:53.618016: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-04-19 11:31:54.344451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:3b:00.0, compute capability: 7.0
+2022-04-19 11:31:55.190000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:3b:00.0, compute capability: 7.0
+2022-04-19 11:32:06.266105: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
+2022-04-19 11:32:07.282282: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-04-19 11:32:07.286107: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-04-19 11:32:07.286199: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas --version
+2022-04-19 11:32:07.288386: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-04-19 11:32:07.288613: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2022-04-19 11:32:29.496543: W tensorflow/core/kernels/queue_base.cc:277] _0_fifo_queue: Skipping cancelled enqueue attempt with queue not closed
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  outputs = layer.apply(inputs, training=is_training)
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1377, in _do_call
+    return fn(*args)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1360, in _run_fn
+    return self._call_tf_sessionrun(options, feed_dict, fetch_list,
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1453, in _call_tf_sessionrun
+    return tf_session.TF_SessionRun_wrapper(self._session, options, feed_dict,
+tensorflow.python.framework.errors_impl.CancelledError: Enqueue operation was cancelled
+	 [[{{node fifo_queue_enqueue}}]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train.py", line 83, in load_and_enqueue
+    sess.run(enqueue_op, feed_dict=food)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 967, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1190, in _run
+    results = self._do_run(handle, final_targets, final_fetches,
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1370, in _do_run
+    return self._do_call(_run_fn, feeds, fetches, targets, options,
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1396, in _do_call
+    raise type(e)(node_def, op, message)  # pylint: disable=no-value-for-parameter
+tensorflow.python.framework.errors_impl.CancelledError: Graph execution error:
+
+Detected at node 'fifo_queue_enqueue' defined at (most recent call last):
+    File "test_deeplabcut.py", line 11, in <module>
+      deeplabcut.train_network(
+    File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/training.py", line 165, in train_network
+      train(
+    File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train_multianimal.py", line 66, in train
+      batch, enqueue_op, placeholders = setup_preloading(batch_spec)
+    File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train.py", line 69, in setup_preloading
+      enqueue_op = q.enqueue(placeholders_list)
+Node: 'fifo_queue_enqueue'
+Enqueue operation was cancelled
+	 [[{{node fifo_queue_enqueue}}]]
+
+Original stack trace for 'fifo_queue_enqueue':
+  File "test_deeplabcut.py", line 11, in <module>
+    deeplabcut.train_network(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/training.py", line 165, in train_network
+    train(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train_multianimal.py", line 66, in train
+    batch, enqueue_op, placeholders = setup_preloading(batch_spec)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train.py", line 69, in setup_preloading
+    enqueue_op = q.enqueue(placeholders_list)
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/ops/data_flow_ops.py", line 347, in enqueue
+    return gen_data_flow_ops.queue_enqueue_v2(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/ops/gen_data_flow_ops.py", line 4063, in queue_enqueue_v2
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/framework/op_def_library.py", line 740, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 3776, in _create_op_internal
+    ret = Operation(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 2175, in __init__
+    self._traceback = tf_stack.extract_stack_for_node(self._c_op)
+
+Config:
+{'all_joints': [[0], [1], [2], [3], [4]],
+ 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_smooth': False,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'minconfidence': 0.01,
+ 'mirror': False,
+ 'multi_stage': True,
+ 'net_type': 'resnet_50',
+ 'nmsradius': 5.0,
+ 'num_idchannel': 0,
+ 'num_joints': 5,
+ 'num_limbs': 10,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [2, 3],
+                             [2, 4],
+                             [3, 4]],
+ 'partaffinityfield_predict': True,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'sigma': 1,
+ 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+The training dataset is successfully created. Use the function 'train_network' to start training. Happy training!
+Selecting multi-animal trainer
+Activating limb prediction...
+Batch Size is 8
+Getting specs multi-animal-imgaug 10 5
+Loading ImageNet-pretrained resnet_50
+Max_iters overwritten as 5
+Save_iters overwritten as 2
+Training parameters:
+{'stride': 8.0, 'weigh_part_predictions': False, 'weigh_negatives': False, 'fg_fraction': 0.25, 'mean_pixel': [123.68, 116.779, 103.939], 'shuffle': True, 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/train/snapshot', 'log_dir': 'log', 'global_scale': 0.8, 'location_refinement': True, 'locref_stdev': 7.2801, 'locref_loss_weight': 0.05, 'locref_huber_loss': True, 'optimizer': 'adam', 'intermediate_supervision': False, 'intermediate_supervision_layer': 12, 'regularize': False, 'weight_decay': 0.0001, 'crop_pad': 0, 'scoremap_dir': 'test', 'batch_size': 8, 'dataset_type': 'multi-animal-imgaug', 'deterministic': False, 'mirror': False, 'pairwise_huber_loss': False, 'weigh_only_present_joints': False, 'partaffinityfield_predict': True, 'pairwise_predict': True, 'all_joints': [[0], [1], [2], [3], [4]], 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'], 'alpha_r': 0.02, 'apply_prob': 0.5, 'clahe': True, 'claheratio': 0.1, 'crop_sampling': 'hybrid', 'crop_size': [400, 400], 'cropratio': 0.4, 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle', 'decay_steps': 30000, 'display_iters': 500, 'edge': False, 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]}, 'histeq': True, 'histeqratio': 0.1, 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt', 'lr_init': 0.0005, 'max_input_size': 1500, 'max_shift': 0.4, 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle', 'min_input_size': 64, 'multi_stage': True, 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]], 'net_type': 'resnet_50', 'num_idchannel': 0, 'num_joints': 5, 'num_limbs': 10, 'pafwidth': 20, 'pairwise_loss_weight': 0.1, 'partaffinityfield_graph': [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]], 'pos_dist_thresh': 17, 'pre_resize': [], 'project_path': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22', 'rotation': 25, 'rotratio': 0.4, 'save_iters': 10000, 'scale_jitter_lo': 0.5, 'scale_jitter_up': 1.25, 'sharpen': False, 'sharpenratio': 0.3}
+Starting multi-animal training....
+The network is now trained and ready to evaluate. Use the function 'evaluate_network' to evaluate the network.
+Running  DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000  with # of trainingiterations: 50000
+Model already evaluated. /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/evaluation-results/iteration-0/CDPQ_testFeb22-trainset95shuffle1/DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000-snapshot-50000.h5
+Selecting best skeleton...
+Graph 1|7
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 161.54it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 76.32it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.83it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1502.41it/s]Graph 2|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 204.17it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 80.97it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 101.59it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1620.85it/s]Graph 3|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 218.04it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 72.13it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 101.05it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1610.80it/s]Graph 4|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 198.38it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 71.14it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 101.35it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1604.73it/s]Graph 5|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 184.67it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 63.66it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 76.25it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1498.42it/s]Graph 6|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 186.67it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 67.87it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 69.72it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1371.97it/s]Graph 7|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 194.68it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 64.98it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 76.00it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1512.78it/s]
+Config:
+{'all_joints': [[0], [1], [2], [3], [4]],
+ 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_smooth': False,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'minconfidence': 0.01,
+ 'mirror': False,
+ 'multi_stage': True,
+ 'net_type': 'resnet_50',
+ 'nmsradius': 5.0,
+ 'num_idchannel': 0,
+ 'num_joints': 5,
+ 'num_limbs': 10,
+ 'optimizer': 'sgd',
+ 'paf_best': [0, 5, 7, 8, 2, 1, 4, 9],
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [2, 3],
+                             [2, 4],
+                             [3, 4]],
+ 'partaffinityfield_predict': True,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'sigma': 1,
+ 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-04-19 11:33:05.892197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:3b:00.0, compute capability: 7.0
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  outputs = layer.apply(inputs, training=is_training)
+Config:
+{'all_joints': [[0], [1], [2], [3], [4]],
+ 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_smooth': False,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'minconfidence': 0.01,
+ 'mirror': False,
+ 'multi_stage': True,
+ 'net_type': 'resnet_50',
+ 'nmsradius': 5.0,
+ 'num_idchannel': 0,
+ 'num_joints': 5,
+ 'num_limbs': 10,
+ 'optimizer': 'sgd',
+ 'paf_best': [0, 5, 7, 8, 2, 1, 4, 9],
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1],
+                             [0, 2],
+                             [0, 3],
+                             [0, 4],
+                             [1, 2],
+                             [1, 3],
+                             [1, 4],
+                             [2, 3],
+                             [2, 4],
+                             [3, 4]],
+ 'partaffinityfield_predict': True,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'sigma': 1,
+ 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+Using snapshot-50000 for model /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1
+Activating extracting of PAFs
+Starting to analyze %  /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314.mp4
+Video already analyzed! /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000.h5
+Using snapshot-50000 for model /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1
+Processing...  /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314.mp4
+Tracklets already computed /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000_el.pickle
+Set overwrite = True to overwrite.
+The tracklets were created (i.e., under the hood deeplabcut.convert_detections2tracklets was run). Now you can 'refine_tracklets' in the GUI, or run 'deeplabcut.stitch_tracklets'.
+Processing...  /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314.mp4
+  0%|          | 0/1962 [00:00<?, ?it/s] 12%|█▏        | 244/1962 [00:00<00:00, 2438.79it/s] 25%|██▍       | 488/1962 [00:00<00:00, 2362.91it/s] 39%|███▉      | 767/1962 [00:00<00:00, 2554.19it/s] 52%|█████▏    | 1023/1962 [00:00<00:00, 2287.91it/s] 64%|██████▍   | 1259/1962 [00:00<00:00, 2309.18it/s] 76%|███████▋  | 1499/1962 [00:00<00:00, 2337.21it/s] 88%|████████▊ | 1735/1962 [00:00<00:00, 2334.82it/s]100%|██████████| 1962/1962 [00:00<00:00, 2336.08it/s]
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/refine_training_dataset/stitch.py:671: UserWarning: No optimal solution found. Employing black magic...
+  warnings.warn("No optimal solution found. Employing black magic...")
+  0%|          | 0/1633 [00:00<?, ?it/s]  0%|          | 3/1633 [00:00<01:10, 23.13it/s]  0%|          | 6/1633 [00:00<01:16, 21.24it/s]  1%|          | 9/1633 [00:00<01:23, 19.42it/s]  1%|          | 11/1633 [00:00<01:25, 19.01it/s]  1%|          | 13/1633 [00:00<01:25, 18.93it/s]  1%|          | 15/1633 [00:00<01:25, 18.98it/s]  1%|          | 18/1633 [00:00<01:17, 20.71it/s]  1%|▏         | 21/1633 [00:01<01:13, 21.79it/s]  1%|▏         | 24/1633 [00:01<01:16, 21.10it/s]  2%|▏         | 27/1633 [00:01<01:17, 20.69it/s]  2%|▏         | 30/1633 [00:01<01:21, 19.60it/s]  2%|▏         | 32/1633 [00:01<01:26, 18.55it/s]  2%|▏         | 35/1633 [00:01<01:21, 19.55it/s]  2%|▏         | 37/1633 [00:01<01:22, 19.35it/s]  2%|▏         | 39/1633 [00:01<01:22, 19.39it/s]  3%|▎         | 41/1633 [00:02<01:25, 18.66it/s]  3%|▎         | 43/1633 [00:02<01:28, 17.98it/s]  3%|▎         | 45/1633 [00:02<01:28, 18.01it/s]  3%|▎         | 47/1633 [00:02<01:27, 18.15it/s]  3%|▎         | 49/1633 [00:02<01:25, 18.46it/s]  3%|▎         | 51/1633 [00:02<01:26, 18.20it/s]  3%|▎         | 54/1633 [00:02<01:23, 18.81it/s]  3%|▎         | 57/1633 [00:02<01:17, 20.24it/s]  4%|▎         | 60/1633 [00:03<01:18, 20.04it/s]  4%|▍         | 62/1633 [00:03<01:22, 18.98it/s]  4%|▍         | 65/1633 [00:03<01:17, 20.20it/s]  4%|▍         | 68/1633 [00:03<01:18, 20.00it/s]  4%|▍         | 71/1633 [00:03<01:14, 20.84it/s]  5%|▍         | 74/1633 [00:03<01:12, 21.54it/s]  5%|▍         | 77/1633 [00:03<01:14, 20.87it/s]  5%|▍         | 80/1633 [00:04<01:17, 19.94it/s]  5%|▌         | 83/1633 [00:04<01:15, 20.65it/s]  5%|▌         | 86/1633 [00:04<01:12, 21.30it/s]  5%|▌         | 89/1633 [00:04<01:11, 21.53it/s]  6%|▌         | 92/1633 [00:04<01:17, 19.81it/s]  6%|▌         | 95/1633 [00:04<01:17, 19.83it/s]  6%|▌         | 98/1633 [00:04<01:16, 20.15it/s]  6%|▌         | 101/1633 [00:05<01:21, 18.69it/s]  6%|▋         | 103/1633 [00:05<01:22, 18.49it/s]  6%|▋         | 106/1633 [00:05<01:20, 19.07it/s]  7%|▋         | 109/1633 [00:05<01:16, 19.84it/s]  7%|▋         | 112/1633 [00:05<01:12, 21.05it/s]  7%|▋         | 115/1633 [00:05<01:09, 21.84it/s]  7%|▋         | 118/1633 [00:05<01:08, 22.23it/s]  7%|▋         | 121/1633 [00:06<01:14, 20.35it/s]  8%|▊         | 124/1633 [00:06<01:19, 19.03it/s]  8%|▊         | 127/1633 [00:06<01:19, 18.96it/s]  8%|▊         | 129/1633 [00:06<01:18, 19.13it/s]  8%|▊         | 132/1633 [00:06<01:15, 19.84it/s]  8%|▊         | 135/1633 [00:06<01:10, 21.23it/s]  8%|▊         | 138/1633 [00:06<01:16, 19.59it/s]  9%|▊         | 141/1633 [00:07<01:23, 17.93it/s]  9%|▉         | 144/1633 [00:07<01:21, 18.35it/s]  9%|▉         | 146/1633 [00:07<01:19, 18.60it/s]  9%|▉         | 149/1633 [00:07<01:13, 20.24it/s]  9%|▉         | 152/1633 [00:07<01:18, 18.87it/s]  9%|▉         | 154/1633 [00:07<01:18, 18.93it/s] 10%|▉         | 156/1633 [00:07<01:21, 18.19it/s] 10%|▉         | 159/1633 [00:08<01:19, 18.44it/s] 10%|▉         | 162/1633 [00:08<01:13, 20.03it/s] 10%|█         | 165/1633 [00:08<01:11, 20.53it/s] 10%|█         | 168/1633 [00:08<01:15, 19.44it/s] 10%|█         | 170/1633 [00:08<01:17, 18.99it/s] 11%|█         | 173/1633 [00:08<01:14, 19.53it/s] 11%|█         | 176/1633 [00:08<01:10, 20.72it/s] 11%|█         | 179/1633 [00:09<01:13, 19.83it/s] 11%|█         | 182/1633 [00:09<01:20, 17.97it/s] 11%|█▏        | 184/1633 [00:09<01:23, 17.44it/s] 11%|█▏        | 187/1633 [00:09<01:14, 19.52it/s] 12%|█▏        | 190/1633 [00:09<01:13, 19.59it/s] 12%|█▏        | 193/1633 [00:09<01:07, 21.31it/s] 12%|█▏        | 196/1633 [00:09<01:09, 20.79it/s] 12%|█▏        | 199/1633 [00:10<01:07, 21.26it/s] 12%|█▏        | 202/1633 [00:10<01:06, 21.49it/s] 13%|█▎        | 205/1633 [00:10<01:05, 21.68it/s] 13%|█▎        | 208/1633 [00:10<01:04, 21.96it/s] 13%|█▎        | 211/1633 [00:10<01:09, 20.55it/s] 13%|█▎        | 214/1633 [00:10<01:10, 20.11it/s] 13%|█▎        | 217/1633 [00:10<01:07, 20.94it/s] 13%|█▎        | 220/1633 [00:11<01:06, 21.27it/s] 14%|█▎        | 223/1633 [00:11<01:02, 22.71it/s] 14%|█▍        | 226/1633 [00:11<01:06, 21.28it/s] 14%|█▍        | 229/1633 [00:11<01:07, 20.73it/s] 14%|█▍        | 232/1633 [00:11<01:11, 19.57it/s] 14%|█▍        | 235/1633 [00:11<01:08, 20.51it/s] 15%|█▍        | 238/1633 [00:11<01:08, 20.47it/s] 15%|█▍        | 241/1633 [00:12<01:05, 21.28it/s] 15%|█▍        | 244/1633 [00:12<01:01, 22.74it/s] 15%|█▌        | 247/1633 [00:12<01:00, 23.06it/s] 15%|█▌        | 250/1633 [00:12<01:00, 22.92it/s] 15%|█▌        | 253/1633 [00:12<01:00, 22.78it/s] 16%|█▌        | 256/1633 [00:12<00:58, 23.64it/s] 16%|█▌        | 259/1633 [00:12<01:01, 22.31it/s] 16%|█▌        | 262/1633 [00:12<00:58, 23.62it/s] 16%|█▌        | 265/1633 [00:13<00:58, 23.48it/s] 16%|█▋        | 268/1633 [00:13<00:58, 23.50it/s] 17%|█▋        | 271/1633 [00:13<00:58, 23.47it/s] 17%|█▋        | 274/1633 [00:13<01:00, 22.44it/s] 17%|█▋        | 277/1633 [00:13<00:58, 23.05it/s] 17%|█▋        | 280/1633 [00:13<01:01, 22.16it/s] 17%|█▋        | 283/1633 [00:13<01:03, 21.38it/s] 18%|█▊        | 286/1633 [00:14<01:06, 20.14it/s] 18%|█▊        | 289/1633 [00:14<01:04, 20.76it/s] 18%|█▊        | 292/1633 [00:14<01:03, 21.03it/s] 18%|█▊        | 295/1633 [00:14<01:03, 21.08it/s] 18%|█▊        | 298/1633 [00:14<01:03, 20.99it/s] 18%|█▊        | 301/1633 [00:14<01:00, 21.93it/s] 19%|█▊        | 304/1633 [00:14<00:58, 22.57it/s] 19%|█▉        | 307/1633 [00:14<00:56, 23.64it/s] 19%|█▉        | 310/1633 [00:15<00:58, 22.50it/s] 19%|█▉        | 313/1633 [00:15<00:58, 22.61it/s] 19%|█▉        | 316/1633 [00:15<00:59, 22.06it/s] 20%|█▉        | 319/1633 [00:15<00:57, 22.89it/s] 20%|█▉        | 322/1633 [00:15<00:57, 22.90it/s] 20%|█▉        | 325/1633 [00:15<00:59, 22.12it/s] 20%|██        | 328/1633 [00:15<00:57, 22.54it/s] 20%|██        | 331/1633 [00:16<00:58, 22.15it/s] 20%|██        | 334/1633 [00:16<00:59, 21.78it/s] 21%|██        | 337/1633 [00:16<00:57, 22.58it/s] 21%|██        | 340/1633 [00:16<00:54, 23.78it/s] 21%|██        | 343/1633 [00:16<00:53, 24.18it/s] 21%|██        | 346/1633 [00:16<00:53, 24.13it/s] 21%|██▏       | 349/1633 [00:16<00:50, 25.25it/s] 22%|██▏       | 352/1633 [00:16<00:51, 25.06it/s] 22%|██▏       | 355/1633 [00:17<00:53, 23.89it/s] 22%|██▏       | 358/1633 [00:17<00:55, 23.05it/s] 22%|██▏       | 361/1633 [00:17<00:57, 22.30it/s] 22%|██▏       | 364/1633 [00:17<00:54, 23.24it/s] 22%|██▏       | 367/1633 [00:17<00:53, 23.76it/s] 23%|██▎       | 370/1633 [00:17<00:56, 22.47it/s] 23%|██▎       | 373/1633 [00:17<00:54, 23.12it/s] 23%|██▎       | 376/1633 [00:17<00:53, 23.62it/s] 23%|██▎       | 379/1633 [00:18<00:53, 23.39it/s] 23%|██▎       | 382/1633 [00:18<00:55, 22.73it/s] 24%|██▎       | 385/1633 [00:18<00:53, 23.40it/s] 24%|██▍       | 388/1633 [00:18<00:50, 24.80it/s] 24%|██▍       | 391/1633 [00:18<00:49, 25.30it/s] 24%|██▍       | 394/1633 [00:18<00:47, 25.94it/s] 24%|██▍       | 397/1633 [00:18<00:48, 25.61it/s] 24%|██▍       | 400/1633 [00:18<00:48, 25.63it/s] 25%|██▍       | 403/1633 [00:19<00:47, 25.95it/s] 25%|██▍       | 406/1633 [00:19<00:50, 24.43it/s] 25%|██▌       | 409/1633 [00:19<00:49, 24.64it/s] 25%|██▌       | 412/1633 [00:19<00:51, 23.59it/s] 25%|██▌       | 415/1633 [00:19<00:51, 23.45it/s] 26%|██▌       | 418/1633 [00:19<00:53, 22.71it/s] 26%|██▌       | 421/1633 [00:19<00:56, 21.58it/s] 26%|██▌       | 425/1633 [00:20<00:51, 23.51it/s] 26%|██▌       | 428/1633 [00:20<00:51, 23.22it/s] 26%|██▋       | 431/1633 [00:20<00:50, 23.62it/s] 27%|██▋       | 435/1633 [00:20<00:48, 24.72it/s] 27%|██▋       | 439/1633 [00:20<00:46, 25.75it/s] 27%|██▋       | 442/1633 [00:20<00:49, 24.25it/s] 27%|██▋       | 445/1633 [00:20<00:47, 24.77it/s] 27%|██▋       | 448/1633 [00:20<00:48, 24.26it/s] 28%|██▊       | 451/1633 [00:21<00:46, 25.46it/s] 28%|██▊       | 454/1633 [00:21<00:45, 25.76it/s] 28%|██▊       | 458/1633 [00:21<00:43, 26.73it/s] 28%|██▊       | 461/1633 [00:21<00:43, 26.78it/s] 28%|██▊       | 464/1633 [00:21<00:45, 25.72it/s] 29%|██▊       | 467/1633 [00:21<00:44, 26.28it/s] 29%|██▉       | 470/1633 [00:21<00:44, 25.88it/s] 29%|██▉       | 473/1633 [00:21<00:43, 26.41it/s] 29%|██▉       | 476/1633 [00:21<00:42, 27.01it/s] 29%|██▉       | 479/1633 [00:22<00:45, 25.51it/s] 30%|██▉       | 482/1633 [00:22<00:48, 23.88it/s] 30%|██▉       | 485/1633 [00:22<00:47, 24.35it/s] 30%|██▉       | 489/1633 [00:22<00:43, 26.35it/s] 30%|███       | 492/1633 [00:22<00:45, 25.15it/s] 30%|███       | 495/1633 [00:22<00:44, 25.74it/s] 31%|███       | 499/1633 [00:22<00:41, 27.56it/s] 31%|███       | 503/1633 [00:23<00:38, 29.46it/s] 31%|███       | 506/1633 [00:23<00:39, 28.62it/s] 31%|███       | 509/1633 [00:23<00:41, 27.12it/s] 31%|███▏      | 513/1633 [00:23<00:39, 28.05it/s] 32%|███▏      | 517/1633 [00:23<00:37, 29.54it/s] 32%|███▏      | 520/1633 [00:23<00:38, 28.83it/s] 32%|███▏      | 523/1633 [00:23<00:38, 28.92it/s] 32%|███▏      | 526/1633 [00:23<00:42, 26.31it/s] 32%|███▏      | 529/1633 [00:23<00:42, 26.16it/s] 33%|███▎      | 532/1633 [00:24<00:42, 26.20it/s] 33%|███▎      | 535/1633 [00:24<00:40, 26.84it/s] 33%|███▎      | 539/1633 [00:24<00:38, 28.48it/s] 33%|███▎      | 543/1633 [00:24<00:38, 28.02it/s] 33%|███▎      | 546/1633 [00:24<00:38, 28.36it/s] 34%|███▎      | 549/1633 [00:24<00:40, 26.79it/s] 34%|███▍      | 552/1633 [00:24<00:41, 25.94it/s] 34%|███▍      | 555/1633 [00:24<00:42, 25.58it/s] 34%|███▍      | 559/1633 [00:25<00:40, 26.80it/s] 34%|███▍      | 562/1633 [00:25<00:39, 27.41it/s] 35%|███▍      | 565/1633 [00:25<00:38, 27.99it/s] 35%|███▍      | 569/1633 [00:25<00:36, 29.29it/s] 35%|███▌      | 572/1633 [00:25<00:37, 28.01it/s] 35%|███▌      | 575/1633 [00:25<00:39, 26.65it/s] 35%|███▌      | 578/1633 [00:25<00:40, 26.34it/s] 36%|███▌      | 581/1633 [00:25<00:40, 26.00it/s] 36%|███▌      | 584/1633 [00:25<00:38, 26.91it/s] 36%|███▌      | 587/1633 [00:26<00:39, 26.30it/s] 36%|███▌      | 591/1633 [00:26<00:36, 28.85it/s] 36%|███▋      | 595/1633 [00:26<00:34, 29.84it/s] 37%|███▋      | 598/1633 [00:26<00:36, 28.39it/s] 37%|███▋      | 601/1633 [00:26<00:37, 27.62it/s] 37%|███▋      | 605/1633 [00:26<00:34, 29.86it/s] 37%|███▋      | 608/1633 [00:26<00:34, 29.30it/s] 37%|███▋      | 611/1633 [00:26<00:35, 28.49it/s] 38%|███▊      | 614/1633 [00:27<00:35, 28.38it/s] 38%|███▊      | 617/1633 [00:27<00:36, 27.68it/s] 38%|███▊      | 620/1633 [00:27<00:37, 27.21it/s] 38%|███▊      | 624/1633 [00:27<00:36, 27.63it/s] 38%|███▊      | 628/1633 [00:27<00:34, 29.28it/s] 39%|███▊      | 631/1633 [00:27<00:36, 27.20it/s] 39%|███▉      | 635/1633 [00:27<00:33, 30.06it/s] 39%|███▉      | 639/1633 [00:27<00:32, 30.98it/s] 39%|███▉      | 643/1633 [00:28<00:32, 30.52it/s] 40%|███▉      | 647/1633 [00:28<00:32, 30.67it/s] 40%|███▉      | 651/1633 [00:28<00:35, 27.90it/s] 40%|████      | 654/1633 [00:28<00:35, 27.71it/s] 40%|████      | 658/1633 [00:28<00:33, 29.13it/s] 40%|████      | 661/1633 [00:28<00:33, 28.66it/s] 41%|████      | 664/1633 [00:28<00:34, 27.83it/s] 41%|████      | 667/1633 [00:28<00:35, 27.31it/s] 41%|████      | 670/1633 [00:28<00:34, 27.55it/s] 41%|████      | 673/1633 [00:29<00:34, 27.79it/s] 41%|████▏     | 677/1633 [00:29<00:32, 29.59it/s] 42%|████▏     | 681/1633 [00:29<00:30, 31.23it/s] 42%|████▏     | 685/1633 [00:29<00:29, 32.27it/s] 42%|████▏     | 689/1633 [00:29<00:29, 31.47it/s] 42%|████▏     | 693/1633 [00:29<00:29, 31.94it/s] 43%|████▎     | 697/1633 [00:29<00:29, 31.30it/s] 43%|████▎     | 701/1633 [00:29<00:31, 29.93it/s] 43%|████▎     | 705/1633 [00:30<00:31, 29.61it/s] 43%|████▎     | 708/1633 [00:30<00:31, 28.92it/s] 44%|████▎     | 712/1633 [00:30<00:30, 29.96it/s] 44%|████▍     | 716/1633 [00:30<00:29, 30.65it/s] 44%|████▍     | 720/1633 [00:30<00:29, 31.38it/s] 44%|████▍     | 724/1633 [00:30<00:29, 30.31it/s] 45%|████▍     | 729/1633 [00:30<00:27, 32.34it/s] 45%|████▍     | 733/1633 [00:30<00:26, 33.46it/s] 45%|████▌     | 737/1633 [00:31<00:26, 33.37it/s] 45%|████▌     | 742/1633 [00:31<00:24, 35.96it/s] 46%|████▌     | 746/1633 [00:31<00:26, 32.87it/s] 46%|████▌     | 750/1633 [00:31<00:25, 34.24it/s] 46%|████▌     | 754/1633 [00:31<00:26, 33.43it/s] 46%|████▋     | 758/1633 [00:31<00:25, 34.77it/s] 47%|████▋     | 762/1633 [00:31<00:26, 32.48it/s] 47%|████▋     | 766/1633 [00:31<00:25, 33.75it/s] 47%|████▋     | 771/1633 [00:32<00:23, 36.45it/s] 47%|████▋     | 775/1633 [00:32<00:23, 37.03it/s] 48%|████▊     | 779/1633 [00:32<00:22, 37.17it/s] 48%|████▊     | 783/1633 [00:32<00:23, 36.78it/s] 48%|████▊     | 787/1633 [00:32<00:22, 37.13it/s] 48%|████▊     | 791/1633 [00:32<00:23, 35.99it/s] 49%|████▊     | 795/1633 [00:32<00:23, 35.05it/s] 49%|████▉     | 799/1633 [00:32<00:23, 35.26it/s] 49%|████▉     | 803/1633 [00:32<00:24, 34.55it/s] 49%|████▉     | 807/1633 [00:33<00:24, 33.20it/s] 50%|████▉     | 811/1633 [00:33<00:24, 33.12it/s] 50%|████▉     | 815/1633 [00:33<00:23, 34.55it/s] 50%|█████     | 819/1633 [00:33<00:22, 35.63it/s] 50%|█████     | 823/1633 [00:33<00:23, 34.62it/s] 51%|█████     | 827/1633 [00:33<00:23, 33.63it/s] 51%|█████     | 832/1633 [00:33<00:21, 36.81it/s] 51%|█████▏    | 837/1633 [00:33<00:20, 38.70it/s] 52%|█████▏    | 841/1633 [00:34<00:20, 37.79it/s] 52%|█████▏    | 846/1633 [00:34<00:19, 40.00it/s] 52%|█████▏    | 851/1633 [00:34<00:20, 38.98it/s] 52%|█████▏    | 855/1633 [00:34<00:20, 37.84it/s] 53%|█████▎    | 859/1633 [00:34<00:20, 37.69it/s] 53%|█████▎    | 864/1633 [00:34<00:19, 39.29it/s] 53%|█████▎    | 869/1633 [00:34<00:18, 40.56it/s] 54%|█████▎    | 874/1633 [00:34<00:18, 40.01it/s] 54%|█████▍    | 879/1633 [00:34<00:18, 40.55it/s] 54%|█████▍    | 884/1633 [00:35<00:18, 41.60it/s] 54%|█████▍    | 889/1633 [00:35<00:17, 41.56it/s] 55%|█████▍    | 894/1633 [00:35<00:18, 39.76it/s] 55%|█████▌    | 899/1633 [00:35<00:18, 40.49it/s] 55%|█████▌    | 904/1633 [00:35<00:18, 39.46it/s] 56%|█████▌    | 909/1633 [00:35<00:18, 39.98it/s] 56%|█████▌    | 914/1633 [00:35<00:18, 39.67it/s] 56%|█████▋    | 920/1633 [00:35<00:16, 43.31it/s] 57%|█████▋    | 925/1633 [00:36<00:16, 42.14it/s] 57%|█████▋    | 930/1633 [00:36<00:17, 41.12it/s] 57%|█████▋    | 935/1633 [00:36<00:16, 43.24it/s] 58%|█████▊    | 940/1633 [00:36<00:15, 44.70it/s] 58%|█████▊    | 945/1633 [00:36<00:15, 44.59it/s] 58%|█████▊    | 950/1633 [00:36<00:15, 44.70it/s] 59%|█████▊    | 956/1633 [00:36<00:14, 46.25it/s] 59%|█████▉    | 961/1633 [00:36<00:14, 46.16it/s] 59%|█████▉    | 966/1633 [00:36<00:14, 46.32it/s] 59%|█████▉    | 971/1633 [00:37<00:14, 45.59it/s] 60%|█████▉    | 977/1633 [00:37<00:13, 47.77it/s] 60%|██████    | 982/1633 [00:37<00:13, 48.15it/s] 60%|██████    | 987/1633 [00:37<00:13, 48.32it/s] 61%|██████    | 993/1633 [00:37<00:12, 49.83it/s] 61%|██████    | 998/1633 [00:37<00:13, 47.37it/s] 61%|██████▏   | 1003/1633 [00:37<00:13, 47.46it/s] 62%|██████▏   | 1009/1633 [00:37<00:12, 48.26it/s] 62%|██████▏   | 1015/1633 [00:37<00:12, 49.70it/s] 63%|██████▎   | 1021/1633 [00:38<00:12, 49.67it/s] 63%|██████▎   | 1026/1633 [00:38<00:12, 48.66it/s] 63%|██████▎   | 1031/1633 [00:38<00:12, 47.11it/s] 64%|██████▎   | 1037/1633 [00:38<00:12, 48.67it/s] 64%|██████▍   | 1043/1633 [00:38<00:11, 51.25it/s] 64%|██████▍   | 1049/1633 [00:38<00:11, 52.05it/s] 65%|██████▍   | 1056/1633 [00:38<00:10, 55.52it/s] 65%|██████▌   | 1062/1633 [00:38<00:11, 51.61it/s] 65%|██████▌   | 1068/1633 [00:39<00:10, 52.69it/s] 66%|██████▌   | 1074/1633 [00:39<00:10, 54.00it/s] 66%|██████▌   | 1080/1633 [00:39<00:10, 53.57it/s] 67%|██████▋   | 1086/1633 [00:39<00:10, 51.58it/s] 67%|██████▋   | 1092/1633 [00:39<00:10, 51.19it/s] 67%|██████▋   | 1098/1633 [00:39<00:10, 51.08it/s] 68%|██████▊   | 1104/1633 [00:39<00:10, 52.25it/s] 68%|██████▊   | 1110/1633 [00:39<00:10, 50.83it/s] 68%|██████▊   | 1116/1633 [00:39<00:10, 51.58it/s] 69%|██████▊   | 1122/1633 [00:40<00:09, 52.40it/s] 69%|██████▉   | 1129/1633 [00:40<00:08, 56.15it/s] 70%|██████▉   | 1135/1633 [00:40<00:09, 55.15it/s] 70%|██████▉   | 1142/1633 [00:40<00:08, 57.57it/s] 70%|███████   | 1148/1633 [00:40<00:08, 57.42it/s] 71%|███████   | 1155/1633 [00:40<00:08, 58.60it/s] 71%|███████   | 1162/1633 [00:40<00:07, 61.58it/s] 72%|███████▏  | 1169/1633 [00:40<00:07, 62.69it/s] 72%|███████▏  | 1177/1633 [00:40<00:07, 64.91it/s] 73%|███████▎  | 1184/1633 [00:41<00:07, 63.75it/s] 73%|███████▎  | 1192/1633 [00:41<00:06, 67.83it/s] 73%|███████▎  | 1199/1633 [00:41<00:06, 67.25it/s] 74%|███████▍  | 1207/1633 [00:41<00:06, 70.88it/s] 74%|███████▍  | 1215/1633 [00:41<00:06, 68.69it/s] 75%|███████▍  | 1222/1633 [00:41<00:05, 68.61it/s] 75%|███████▌  | 1230/1633 [00:41<00:05, 70.92it/s] 76%|███████▌  | 1239/1633 [00:41<00:05, 73.92it/s] 76%|███████▋  | 1247/1633 [00:41<00:05, 75.62it/s] 77%|███████▋  | 1256/1633 [00:41<00:04, 78.48it/s] 77%|███████▋  | 1265/1633 [00:42<00:04, 78.64it/s] 78%|███████▊  | 1274/1633 [00:42<00:04, 79.93it/s] 79%|███████▊  | 1283/1633 [00:42<00:04, 81.74it/s] 79%|███████▉  | 1293/1633 [00:42<00:03, 85.68it/s] 80%|███████▉  | 1302/1633 [00:42<00:03, 85.61it/s] 80%|████████  | 1312/1633 [00:42<00:03, 86.59it/s] 81%|████████  | 1321/1633 [00:42<00:03, 87.35it/s] 82%|████████▏ | 1331/1633 [00:42<00:03, 87.88it/s] 82%|████████▏ | 1342/1633 [00:42<00:03, 93.23it/s] 83%|████████▎ | 1353/1633 [00:43<00:02, 97.30it/s] 84%|████████▎ | 1365/1633 [00:43<00:02, 101.88it/s] 84%|████████▍ | 1376/1633 [00:43<00:02, 101.72it/s] 85%|████████▌ | 1389/1633 [00:43<00:02, 108.34it/s] 86%|████████▌ | 1403/1633 [00:43<00:01, 116.66it/s] 87%|████████▋ | 1417/1633 [00:43<00:01, 121.50it/s] 88%|████████▊ | 1432/1633 [00:43<00:01, 129.38it/s] 89%|████████▊ | 1448/1633 [00:43<00:01, 137.51it/s] 90%|████████▉ | 1465/1633 [00:43<00:01, 144.38it/s] 91%|█████████ | 1487/1633 [00:43<00:00, 166.13it/s] 92%|█████████▏| 1509/1633 [00:44<00:00, 181.40it/s] 94%|█████████▍| 1538/1633 [00:44<00:00, 213.15it/s] 97%|█████████▋| 1579/1633 [00:44<00:00, 270.96it/s]100%|██████████| 1633/1633 [00:44<00:00, 36.82it/s] 
+The videos are analyzed. Time to assemble animals and track 'em... 
+ Call 'create_video_with_all_detections' to check multi-animal detection quality before tracking.
+If the tracking is not satisfactory for some videos, consider expanding the training set. You can use the function 'extract_outlier_frames' to extract a few representative outlier frames.
+Processing...  /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314.mp4
+  0%|          | 0/3422 [00:00<?, ?it/s]  6%|▌         | 212/3422 [00:00<00:01, 2109.85it/s] 12%|█▏        | 423/3422 [00:00<00:01, 2041.35it/s] 18%|█▊        | 628/3422 [00:00<00:01, 1864.16it/s] 24%|██▍       | 816/3422 [00:00<00:01, 1769.32it/s] 30%|██▉       | 1014/3422 [00:00<00:01, 1837.58it/s] 35%|███▌      | 1204/3422 [00:00<00:01, 1856.97it/s] 42%|████▏     | 1435/3422 [00:00<00:00, 1998.80it/s] 48%|████▊     | 1637/3422 [00:00<00:01, 1756.16it/s] 53%|█████▎    | 1819/3422 [00:01<00:00, 1703.47it/s] 59%|█████▉    | 2019/3422 [00:01<00:00, 1784.70it/s] 64%|██████▍   | 2201/3422 [00:01<00:00, 1793.06it/s] 70%|██████▉   | 2383/3422 [00:01<00:00, 1789.98it/s] 75%|███████▌  | 2574/3422 [00:01<00:00, 1823.55it/s] 81%|████████  | 2774/3422 [00:01<00:00, 1873.82it/s] 87%|████████▋ | 2963/3422 [00:01<00:00, 1768.06it/s] 92%|█████████▏| 3143/3422 [00:01<00:00, 1776.28it/s] 97%|█████████▋| 3322/3422 [00:01<00:00, 1719.00it/s]100%|██████████| 3422/3422 [00:01<00:00, 1813.83it/s]
+Traceback (most recent call last):
+  File "test_deeplabcut.py", line 45, in <module>
+    deeplabcut.create_labeled_video(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/make_labeled_video.py", line 464, in create_labeled_video
+    DLCscorer, DLCscorerlegacy = auxiliaryfunctions.GetScorerName(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/auxiliaryfunctions.py", line 567, in GetScorerName
+    [fn.split(".")[0] for fn in os.listdir(modelfolder) if "index" in fn]
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle0/train'

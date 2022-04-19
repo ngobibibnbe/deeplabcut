@@ -1,226 +1,0 @@
-DLC loaded in light mode; you cannot use any GUI (labeling, relabeling and standalone GUI)
-/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/labeled-data/GR77_20200512_111309/CollectedData_CDPQ_experiment.h5  not found (perhaps not annotated).
-Utilizing the following graph: [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
-Creating training data for: Shuffle: 1 TrainFraction:  0.95
-  0%|          | 0/100 [00:00<?, ?it/s]  3%|▎         | 3/100 [00:00<00:03, 27.85it/s]  6%|▌         | 6/100 [00:00<00:03, 25.39it/s] 11%|█         | 11/100 [00:00<00:03, 29.05it/s] 14%|█▍        | 14/100 [00:00<00:03, 27.73it/s] 19%|█▉        | 19/100 [00:00<00:02, 33.99it/s] 24%|██▍       | 24/100 [00:00<00:01, 38.07it/s] 28%|██▊       | 28/100 [00:00<00:02, 32.77it/s] 34%|███▍      | 34/100 [00:00<00:01, 38.69it/s] 39%|███▉      | 39/100 [00:01<00:01, 31.92it/s] 43%|████▎     | 43/100 [00:01<00:02, 27.79it/s] 47%|████▋     | 47/100 [00:01<00:01, 26.58it/s] 50%|█████     | 50/100 [00:01<00:02, 24.62it/s] 54%|█████▍    | 54/100 [00:01<00:01, 26.10it/s] 57%|█████▋    | 57/100 [00:01<00:01, 26.84it/s] 61%|██████    | 61/100 [00:02<00:01, 28.86it/s] 67%|██████▋   | 67/100 [00:02<00:00, 35.56it/s] 71%|███████   | 71/100 [00:02<00:00, 33.28it/s] 75%|███████▌  | 75/100 [00:02<00:00, 33.25it/s] 79%|███████▉  | 79/100 [00:02<00:00, 31.26it/s] 83%|████████▎ | 83/100 [00:02<00:00, 32.46it/s] 87%|████████▋ | 87/100 [00:02<00:00, 31.43it/s] 91%|█████████ | 91/100 [00:02<00:00, 30.95it/s] 96%|█████████▌| 96/100 [00:03<00:00, 32.84it/s]100%|██████████| 100/100 [00:03<00:00, 31.30it/s]
-Config:
-{'all_joints': [[0], [1], [2], [3], [4]],
- 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'],
- 'alpha_r': 0.02,
- 'apply_prob': 0.5,
- 'batch_size': 8,
- 'clahe': True,
- 'claheratio': 0.1,
- 'crop_pad': 0,
- 'crop_sampling': 'hybrid',
- 'crop_size': [400, 400],
- 'cropratio': 0.4,
- 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
- 'dataset_type': 'multi-animal-imgaug',
- 'decay_steps': 30000,
- 'deterministic': False,
- 'display_iters': 500,
- 'edge': False,
- 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
- 'fg_fraction': 0.25,
- 'global_scale': 0.8,
- 'histeq': True,
- 'histeqratio': 0.1,
- 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
- 'intermediate_supervision': False,
- 'intermediate_supervision_layer': 12,
- 'location_refinement': True,
- 'locref_huber_loss': True,
- 'locref_loss_weight': 0.05,
- 'locref_stdev': 7.2801,
- 'log_dir': 'log',
- 'lr_init': 0.0005,
- 'max_input_size': 1500,
- 'max_shift': 0.4,
- 'mean_pixel': [123.68, 116.779, 103.939],
- 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle',
- 'min_input_size': 64,
- 'mirror': False,
- 'multi_stage': True,
- 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
- 'net_type': 'resnet_50',
- 'num_idchannel': 0,
- 'num_joints': 5,
- 'num_limbs': 10,
- 'optimizer': 'adam',
- 'pafwidth': 20,
- 'pairwise_huber_loss': False,
- 'pairwise_loss_weight': 0.1,
- 'pairwise_predict': False,
- 'partaffinityfield_graph': [[0, 1],
-                             [0, 2],
-                             [0, 3],
-                             [0, 4],
-                             [1, 2],
-                             [1, 3],
-                             [1, 4],
-                             [2, 3],
-                             [2, 4],
-                             [3, 4]],
- 'partaffinityfield_predict': True,
- 'pos_dist_thresh': 17,
- 'pre_resize': [],
- 'project_path': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22',
- 'regularize': False,
- 'rotation': 25,
- 'rotratio': 0.4,
- 'save_iters': 10000,
- 'scale_jitter_lo': 0.5,
- 'scale_jitter_up': 1.25,
- 'scoremap_dir': 'test',
- 'sharpen': False,
- 'sharpenratio': 0.3,
- 'shuffle': True,
- 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/train/snapshot',
- 'stride': 8.0,
- 'weigh_negatives': False,
- 'weigh_only_present_joints': False,
- 'weigh_part_predictions': False,
- 'weight_decay': 0.0001}
-2022-04-01 17:20:40.026516: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2022-04-01 17:20:43.601414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
-2022-04-01 17:20:44.487198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
-2022-04-01 17:20:57.081667: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
-2022-04-01 17:20:58.604191: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
-2022-04-01 17:20:58.609237: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
-2022-04-01 17:20:58.609477: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas --version
-2022-04-01 17:20:58.612360: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
-2022-04-01 17:20:58.612599: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
-Relying on driver to perform ptx compilation. 
-Modify $PATH to customize ptxas location.
-This message will be only logged once.
-/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
-  warnings.warn('`layer.apply` is deprecated and '
-/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
-  outputs = layer.apply(inputs, training=is_training)
-iteration: 500 loss: 0.0291 scmap loss: 0.0252 locref loss: 0.0008 limb loss: 0.0030 lr: 0.0001
-iteration: 1000 loss: 0.0116 scmap loss: 0.0103 locref loss: 0.0003 limb loss: 0.0010 lr: 0.0001
-iteration: 1500 loss: 0.0084 scmap loss: 0.0075 locref loss: 0.0002 limb loss: 0.0007 lr: 0.0001
-iteration: 2000 loss: 0.0073 scmap loss: 0.0065 locref loss: 0.0002 limb loss: 0.0006 lr: 0.0001
-iteration: 2500 loss: 0.0065 scmap loss: 0.0058 locref loss: 0.0002 limb loss: 0.0005 lr: 0.0001
-iteration: 3000 loss: 0.0058 scmap loss: 0.0052 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
-iteration: 3500 loss: 0.0055 scmap loss: 0.0050 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
-iteration: 4000 loss: 0.0052 scmap loss: 0.0047 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
-iteration: 4500 loss: 0.0050 scmap loss: 0.0045 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
-iteration: 5000 loss: 0.0048 scmap loss: 0.0043 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
-iteration: 5500 loss: 0.0047 scmap loss: 0.0042 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
-iteration: 6000 loss: 0.0045 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
-iteration: 6500 loss: 0.0044 scmap loss: 0.0040 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
-iteration: 7000 loss: 0.0043 scmap loss: 0.0039 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
-iteration: 7500 loss: 0.0041 scmap loss: 0.0038 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
-iteration: 8000 loss: 0.0036 scmap loss: 0.0034 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 8500 loss: 0.0035 scmap loss: 0.0033 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 9000 loss: 0.0035 scmap loss: 0.0032 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 9500 loss: 0.0035 scmap loss: 0.0032 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 10000 loss: 0.0033 scmap loss: 0.0031 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 10500 loss: 0.0034 scmap loss: 0.0031 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 11000 loss: 0.0034 scmap loss: 0.0031 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 11500 loss: 0.0032 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 12000 loss: 0.0032 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
-iteration: 12500 loss: 0.0030 scmap loss: 0.0027 locref loss: 0.0001 limb loss: 0.0002 lr: 1e-05
-iteration: 13000 loss: 0.0028 scmap loss: 0.0026 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 13500 loss: 0.0029 scmap loss: 0.0027 locref loss: 0.0001 limb loss: 0.0002 lr: 1e-05
-iteration: 14000 loss: 0.0028 scmap loss: 0.0026 locref loss: 0.0001 limb loss: 0.0002 lr: 1e-05
-iteration: 14500 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 15000 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 15500 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 16000 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 16500 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 17000 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 17500 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 18000 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0002 lr: 1e-05
-iteration: 18500 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 19000 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 19500 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 20000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 20500 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 21000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 21500 loss: 0.0025 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 22000 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 22500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 23000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 23500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 24000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 24500 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 25000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 25500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 26000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 26500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 27000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 27500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 28000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 28500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 29000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 29500 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 30000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 30500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 31000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 31500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 32000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 32500 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 33000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 33500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 34000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 34500 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 35000 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 35500 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 36000 loss: 0.0022 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 36500 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 37000 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 37500 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 38000 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 38500 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 39000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 39500 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 40000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 40500 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 41000 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 41500 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 42000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 42500 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 43000 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 43500 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 44000 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 44500 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 45000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 45500 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 46000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 46500 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 47000 loss: 0.0020 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 47500 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 48000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 48500 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 49000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 49500 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-iteration: 50000 loss: 0.0019 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
-Exception in thread Thread-2:
-Traceback (most recent call last):
-  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/threading.py", line 870, in run
-    self._target(*self._args, **self._kwargs)
-  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/core/train.py", line 83, in load_and_enqueue
-    sess.run(enqueue_op, feed_dict=food)
-  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 967, in run
-    result = self._run(None, fetches, feed_dict, options_ptr,
-  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/client/session.py", line 1115, in _run
-    raise RuntimeError('Attempted to use a closed Session.')
-RuntimeError: Attempted to use a closed Session.
-The training dataset is successfully created. Use the function 'train_network' to start training. Happy training!
-Selecting multi-animal trainer
-Activating limb prediction...
-Batch Size is 8
-Getting specs multi-animal-imgaug 10 5
-Loading ImageNet-pretrained resnet_50
-Max_iters overwritten as 50000
-Save_iters overwritten as 20000
-Training parameters:
-{'stride': 8.0, 'weigh_part_predictions': False, 'weigh_negatives': False, 'fg_fraction': 0.25, 'mean_pixel': [123.68, 116.779, 103.939], 'shuffle': True, 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/train/snapshot', 'log_dir': 'log', 'global_scale': 0.8, 'location_refinement': True, 'locref_stdev': 7.2801, 'locref_loss_weight': 0.05, 'locref_huber_loss': True, 'optimizer': 'adam', 'intermediate_supervision': False, 'intermediate_supervision_layer': 12, 'regularize': False, 'weight_decay': 0.0001, 'crop_pad': 0, 'scoremap_dir': 'test', 'batch_size': 8, 'dataset_type': 'multi-animal-imgaug', 'deterministic': False, 'mirror': False, 'pairwise_huber_loss': False, 'weigh_only_present_joints': False, 'partaffinityfield_predict': True, 'pairwise_predict': True, 'all_joints': [[0], [1], [2], [3], [4]], 'all_joints_names': ['head', 'lear', 'rear', 'center', 'tail'], 'alpha_r': 0.02, 'apply_prob': 0.5, 'clahe': True, 'claheratio': 0.1, 'crop_sampling': 'hybrid', 'crop_size': [400, 400], 'cropratio': 0.4, 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle', 'decay_steps': 30000, 'display_iters': 500, 'edge': False, 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]}, 'histeq': True, 'histeqratio': 0.1, 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt', 'lr_init': 0.0005, 'max_input_size': 1500, 'max_shift': 0.4, 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle', 'min_input_size': 64, 'multi_stage': True, 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]], 'net_type': 'resnet_50', 'num_idchannel': 0, 'num_joints': 5, 'num_limbs': 10, 'pafwidth': 20, 'pairwise_loss_weight': 0.1, 'partaffinityfield_graph': [[0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]], 'pos_dist_thresh': 17, 'pre_resize': [], 'project_path': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22', 'rotation': 25, 'rotratio': 0.4, 'save_iters': 10000, 'scale_jitter_lo': 0.5, 'scale_jitter_up': 1.25, 'sharpen': False, 'sharpenratio': 0.3}
-Starting multi-animal training....
-The network is now trained and ready to evaluate. Use the function 'evaluate_network' to evaluate the network.

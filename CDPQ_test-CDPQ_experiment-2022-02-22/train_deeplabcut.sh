@@ -5,7 +5,8 @@
 #SBATCH --mem=24G
 #SBATCH --time=2-00:0:0
 
-source ../../our_virtual_envs/dlc/venv/bin/activate
+#source ../../our_virtual_envs/dlc/venv/bin/activate
+source ../../../our_virtual_envs/dlc/venv/bin/activate
 python test_deeplabcut.py
 
 #make sure you have done source deeplabcut/venv/bin/activate and you are in the directory of the project

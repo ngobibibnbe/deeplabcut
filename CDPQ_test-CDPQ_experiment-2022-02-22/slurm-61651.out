@@ -1,0 +1,5 @@
+/var/spool/slurmd/job61651/slurm_script: line 8: ../../our_virtual_envs/dlc/venv/bin/activate: No such file or directory
+Traceback (most recent call last):
+  File "test_deeplabcut.py", line 1, in <module>
+    import deeplabcut 
+ImportError: No module named deeplabcut
