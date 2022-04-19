@@ -1,0 +1,101 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+all_joints_names:
+- head
+- lear
+- rear
+- center
+- tail
+alpha_r: 0.02
+apply_prob: 0.5
+batch_size: 8
+clahe: true
+claheratio: 0.1
+crop_sampling: hybrid
+crop_size:
+- 400
+- 400
+cropratio: 0.4
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle
+dataset_type: multi-animal-imgaug
+decay_steps: 30000
+display_iters: 500
+edge: false
+emboss:
+  alpha:
+  - 0.0
+  - 1.0
+  embossratio: 0.1
+  strength:
+  - 0.5
+  - 1.5
+global_scale: 0.8
+histeq: true
+histeqratio: 0.1
+init_weights: /project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+intermediate_supervision: false
+intermediate_supervision_layer: 12
+location_refinement: true
+locref_huber_loss: true
+locref_loss_weight: 0.05
+locref_stdev: 7.2801
+lr_init: 0.0005
+max_input_size: 1500
+max_shift: 0.4
+metadataset: training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle
+min_input_size: 64
+mirror: false
+multi_stage: true
+multi_step:
+- - 0.0001
+  - 7500
+- - 5.0e-05
+  - 12000
+- - 1.0e-05
+  - 200000
+net_type: resnet_50
+num_idchannel: 0
+num_joints: 5
+num_limbs: 10
+optimizer: adam
+pafwidth: 20
+pairwise_huber_loss: false
+pairwise_loss_weight: 0.1
+pairwise_predict: false
+partaffinityfield_graph:
+- - 0
+  - 1
+- - 0
+  - 2
+- - 0
+  - 3
+- - 0
+  - 4
+- - 1
+  - 2
+- - 1
+  - 3
+- - 1
+  - 4
+- - 2
+  - 3
+- - 2
+  - 4
+- - 3
+  - 4
+partaffinityfield_predict: true
+pos_dist_thresh: 17
+pre_resize: []
+project_path: /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22
+rotation: 25
+rotratio: 0.4
+save_iters: 10000
+scale_jitter_lo: 0.5
+scale_jitter_up: 1.25
+sharpen: false
+sharpenratio: 0.3
+weigh_only_present_joints: false
