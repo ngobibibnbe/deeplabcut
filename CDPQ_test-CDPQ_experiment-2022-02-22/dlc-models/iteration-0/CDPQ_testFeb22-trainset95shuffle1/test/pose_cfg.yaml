@@ -1,0 +1,60 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+all_joints_names:
+- head
+- lear
+- rear
+- center
+- tail
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle
+dataset_type: multi-animal-imgaug
+global_scale: 0.8
+init_weights: /project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+location_refinement: true
+locref_smooth: false
+locref_stdev: 7.2801
+minconfidence: 0.01
+multi_stage: true
+net_type: resnet_50
+nmsradius: 5.0
+num_idchannel: 0
+num_joints: 5
+num_limbs: 10
+pairwise_predict: false
+partaffinityfield_graph:
+- - 0
+  - 1
+- - 0
+  - 2
+- - 0
+  - 3
+- - 0
+  - 4
+- - 1
+  - 2
+- - 1
+  - 3
+- - 1
+  - 4
+- - 2
+  - 3
+- - 2
+  - 4
+- - 3
+  - 4
+partaffinityfield_predict: true
+scoremap_dir: test
+sigma: 1
+paf_best:
+- 0
+- 5
+- 7
+- 8
+- 2
+- 1
+- 4
+- 9

@@ -1,0 +1,55 @@
+DLC loaded in light mode; you cannot use any GUI (labeling, relabeling and standalone GUI)
+Running  DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000  with # of trainingiterations: 50000
+Model already evaluated. /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/evaluation-results/iteration-0/CDPQ_testFeb22-trainset95shuffle1/DLC_dlcrnetms5_CDPQ_testFeb22shuffle1_50000-snapshot-50000.h5
+Selecting best skeleton...
+Graph 1|7
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 188.42it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 71.95it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 90.80it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1490.59it/s]Graph 2|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 257.66it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 74.52it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 93.78it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1575.96it/s]Graph 3|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 252.60it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 76.08it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 94.65it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1584.72it/s]Graph 4|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 231.96it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 81.14it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 99.30it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1659.42it/s]Graph 5|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 227.86it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 71.38it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 74.27it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1553.61it/s]Graph 6|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 236.51it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 71.34it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 75.42it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1509.98it/s]Graph 7|7
+
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 192.00it/s]
+  0%|          | 0/6 [00:00<?, ?it/s]100%|██████████| 6/6 [00:00<00:00, 69.33it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 75.68it/s]
+  0%|          | 0/7 [00:00<?, ?it/s]100%|██████████| 7/7 [00:00<00:00, 1456.14it/s]
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  outputs = layer.apply(inputs, training=is_training)
+Using snapshot-50000 for model /home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1
+Activating extracting of PAFs
+No video(s) were found. Please check your paths and/or 'video_type'.
+No video(s) found. Please check your path!
+Traceback (most recent call last):
+  File "test_deeplabcut.py", line 35, in <module>
+    deeplabcut.filterpredictions(config_path, 
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/post_processing/filtering.py", line 157, in filterpredictions
+    DLCscorer, DLCscorerlegacy = auxiliaryfunctions.GetScorerName(
+  File "/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/utils/auxiliaryfunctions.py", line 567, in GetScorerName
+    [fn.split(".")[0] for fn in os.listdir(modelfolder) if "index" in fn]
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle0/train'
