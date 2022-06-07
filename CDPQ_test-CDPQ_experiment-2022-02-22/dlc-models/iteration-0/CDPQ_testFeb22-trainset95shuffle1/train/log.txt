@@ -2777,3 +2777,4 @@
  'weigh_part_predictions': False,
  'weight_decay': 0.0001}
 2022-06-07 03:57:04 iteration: 500 loss: 0.0285 scmap loss: 0.0243 locref loss: 0.0011 limb loss: 0.0031 lr: 0.0001
+2022-06-07 03:58:49 iteration: 1000 loss: 0.0121 scmap loss: 0.0107 locref loss: 0.0003 limb loss: 0.0011 lr: 0.0001
