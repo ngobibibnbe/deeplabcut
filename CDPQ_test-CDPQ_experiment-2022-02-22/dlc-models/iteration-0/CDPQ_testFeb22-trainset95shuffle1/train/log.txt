@@ -2778,3 +2778,9 @@
  'weight_decay': 0.0001}
 2022-06-07 03:57:04 iteration: 500 loss: 0.0285 scmap loss: 0.0243 locref loss: 0.0011 limb loss: 0.0031 lr: 0.0001
 2022-06-07 03:58:49 iteration: 1000 loss: 0.0121 scmap loss: 0.0107 locref loss: 0.0003 limb loss: 0.0011 lr: 0.0001
+2022-06-07 04:00:34 iteration: 1500 loss: 0.0092 scmap loss: 0.0080 locref loss: 0.0002 limb loss: 0.0009 lr: 0.0001
+2022-06-07 04:02:19 iteration: 2000 loss: 0.0083 scmap loss: 0.0073 locref loss: 0.0002 limb loss: 0.0008 lr: 0.0001
+2022-06-07 04:04:05 iteration: 2500 loss: 0.0072 scmap loss: 0.0064 locref loss: 0.0002 limb loss: 0.0006 lr: 0.0001
+2022-06-07 04:05:49 iteration: 3000 loss: 0.0068 scmap loss: 0.0061 locref loss: 0.0001 limb loss: 0.0006 lr: 0.0001
+2022-06-07 04:07:34 iteration: 3500 loss: 0.0066 scmap loss: 0.0060 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
+2022-06-07 04:09:20 iteration: 4000 loss: 0.0062 scmap loss: 0.0056 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
