@@ -2792,3 +2792,4 @@
 2022-06-07 04:19:51 iteration: 7000 loss: 0.0052 scmap loss: 0.0048 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
 2022-06-07 04:21:37 iteration: 7500 loss: 0.0053 scmap loss: 0.0049 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
 2022-06-07 04:23:23 iteration: 8000 loss: 0.0044 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
+2022-06-07 04:25:08 iteration: 8500 loss: 0.0044 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
