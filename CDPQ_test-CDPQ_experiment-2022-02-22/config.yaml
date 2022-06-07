@@ -33,20 +33,9 @@ individuals:
 
 uniquebodyparts: []
 multianimalbodyparts:
-- head
-- lear
-- rear
 - center
 - tail
 skeleton:
-- - head
-  - lear
-- - head
-  - rear
-- - heads
-  - center
-- - lear
-  - rear
 - - center
   - tail
 bodyparts: MULTI!
