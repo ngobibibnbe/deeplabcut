@@ -1,14 +1,1 @@
-iteration: 500, loss: 0.0304, scmap loss: 0.0263, locref loss: 0.0008, limb loss: 0.0032, lr: 0.0001
-iteration: 1000, loss: 0.0112, scmap loss: 0.0100, locref loss: 0.0003, limb loss: 0.0009, lr: 0.0001
-iteration: 1500, loss: 0.0086, scmap loss: 0.0077, locref loss: 0.0002, limb loss: 0.0007, lr: 0.0001
-iteration: 2000, loss: 0.0071, scmap loss: 0.0063, locref loss: 0.0002, limb loss: 0.0006, lr: 0.0001
-iteration: 2500, loss: 0.0064, scmap loss: 0.0057, locref loss: 0.0001, limb loss: 0.0005, lr: 0.0001
-iteration: 3000, loss: 0.0061, scmap loss: 0.0055, locref loss: 0.0001, limb loss: 0.0005, lr: 0.0001
-iteration: 3500, loss: 0.0054, scmap loss: 0.0049, locref loss: 0.0001, limb loss: 0.0004, lr: 0.0001
-iteration: 4000, loss: 0.0052, scmap loss: 0.0047, locref loss: 0.0001, limb loss: 0.0004, lr: 0.0001
-iteration: 4500, loss: 0.0051, scmap loss: 0.0046, locref loss: 0.0001, limb loss: 0.0004, lr: 0.0001
-iteration: 5000, loss: 0.0049, scmap loss: 0.0045, locref loss: 0.0001, limb loss: 0.0003, lr: 0.0001
-iteration: 5500, loss: 0.0048, scmap loss: 0.0044, locref loss: 0.0001, limb loss: 0.0003, lr: 0.0001
-iteration: 6000, loss: 0.0045, scmap loss: 0.0041, locref loss: 0.0001, limb loss: 0.0003, lr: 0.0001
-iteration: 6500, loss: 0.0043, scmap loss: 0.0040, locref loss: 0.0001, limb loss: 0.0003, lr: 0.0001
-iteration: 7000, loss: 0.0044, scmap loss: 0.0041, locref loss: 0.0001, limb loss: 0.0003, lr: 0.0001
+iteration: 500, loss: 0.0285, scmap loss: 0.0243, locref loss: 0.0011, limb loss: 0.0031, lr: 0.0001
