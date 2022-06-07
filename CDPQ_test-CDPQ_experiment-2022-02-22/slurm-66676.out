@@ -1,0 +1,108 @@
+DLC loaded in light mode; you cannot use any GUI (labeling, relabeling and standalone GUI)
+/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/labeled-data/GR77_20200512_111309/CollectedData_CDPQ_experiment.h5  not found (perhaps not annotated).
+Utilizing the following graph: [[0, 1]]
+Creating training data for: Shuffle: 1 TrainFraction:  0.95
+  0%|          | 0/100 [00:00<?, ?it/s]  5%|▌         | 5/100 [00:00<00:02, 45.68it/s] 14%|█▍        | 14/100 [00:00<00:01, 68.73it/s] 23%|██▎       | 23/100 [00:00<00:01, 75.94it/s] 32%|███▏      | 32/100 [00:00<00:00, 80.31it/s] 41%|████      | 41/100 [00:00<00:00, 82.12it/s] 50%|█████     | 50/100 [00:00<00:00, 83.26it/s] 59%|█████▉    | 59/100 [00:00<00:00, 83.58it/s] 68%|██████▊   | 68/100 [00:00<00:00, 83.48it/s] 77%|███████▋  | 77/100 [00:00<00:00, 84.37it/s] 86%|████████▌ | 86/100 [00:01<00:00, 84.47it/s] 95%|█████████▌| 95/100 [00:01<00:00, 84.74it/s]100%|██████████| 100/100 [00:01<00:00, 81.86it/s]
+Config:
+{'all_joints': [[0], [1]],
+ 'all_joints_names': ['center', 'tail'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 8,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/CDPQ_test_CDPQ_experiment95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': '/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_CDPQ_testFeb22/Documentation_data-CDPQ_test_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': True,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 2,
+ 'num_limbs': 1,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/dlc-models/iteration-0/CDPQ_testFeb22-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-06-07 03:54:54.845418: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-06-07 03:54:58.026678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
+2022-06-07 03:54:58.900148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 14639 MB memory:  -> device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:af:00.0, compute capability: 7.0
+2022-06-07 03:55:10.824619: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
+2022-06-07 03:55:11.697425: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-06-07 03:55:11.702634: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-06-07 03:55:11.702768: W tensorflow/stream_executor/gpu/asm_compiler.cc:80] Couldn't get ptxas version string: INTERNAL: Couldn't invoke ptxas --version
+2022-06-07 03:55:11.705818: I tensorflow/core/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2022-06-07 03:55:11.706038: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] INTERNAL: Failed to launch ptxas
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  outputs = layer.apply(inputs, training=is_training)
+iteration: 500 loss: 0.0285 scmap loss: 0.0243 locref loss: 0.0011 limb loss: 0.0031 lr: 0.0001
+iteration: 1000 loss: 0.0121 scmap loss: 0.0107 locref loss: 0.0003 limb loss: 0.0011 lr: 0.0001
+iteration: 1500 loss: 0.0092 scmap loss: 0.0080 locref loss: 0.0002 limb loss: 0.0009 lr: 0.0001
+iteration: 2000 loss: 0.0083 scmap loss: 0.0073 locref loss: 0.0002 limb loss: 0.0008 lr: 0.0001
+iteration: 2500 loss: 0.0072 scmap loss: 0.0064 locref loss: 0.0002 limb loss: 0.0006 lr: 0.0001
+iteration: 3000 loss: 0.0068 scmap loss: 0.0061 locref loss: 0.0001 limb loss: 0.0006 lr: 0.0001
+iteration: 3500 loss: 0.0066 scmap loss: 0.0060 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
+iteration: 4000 loss: 0.0062 scmap loss: 0.0056 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
+iteration: 4500 loss: 0.0060 scmap loss: 0.0054 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+iteration: 5000 loss: 0.0057 scmap loss: 0.0052 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+iteration: 5500 loss: 0.0056 scmap loss: 0.0052 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+iteration: 6000 loss: 0.0054 scmap loss: 0.0049 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+iteration: 6500 loss: 0.0055 scmap loss: 0.0051 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+iteration: 7000 loss: 0.0052 scmap loss: 0.0048 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+iteration: 7500 loss: 0.0053 scmap loss: 0.0049 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+iteration: 8000 loss: 0.0044 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
