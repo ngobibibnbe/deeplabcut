@@ -99,6 +99,7 @@ iteration: 3000 loss: 0.0068 scmap loss: 0.0061 locref loss: 0.0001 limb loss: 0
 iteration: 3500 loss: 0.0066 scmap loss: 0.0060 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
 iteration: 4000 loss: 0.0062 scmap loss: 0.0056 locref loss: 0.0001 limb loss: 0.0005 lr: 0.0001
 iteration: 4500 loss: 0.0060 scmap loss: 0.0054 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+<<<<<<< HEAD
 iteration: 5000 loss: 0.0057 scmap loss: 0.0052 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
 iteration: 5500 loss: 0.0056 scmap loss: 0.0052 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
 iteration: 6000 loss: 0.0054 scmap loss: 0.0049 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
@@ -107,3 +108,5 @@ iteration: 7000 loss: 0.0052 scmap loss: 0.0048 locref loss: 0.0001 limb loss: 0
 iteration: 7500 loss: 0.0053 scmap loss: 0.0049 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
 iteration: 8000 loss: 0.0044 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
 iteration: 8500 loss: 0.0044 scmap loss: 0.0041 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
+=======
+>>>>>>> b1e92d535582f408638361acbfd3dcb4af5b1150
