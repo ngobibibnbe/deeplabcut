@@ -19,7 +19,7 @@ config_path= path_config_file = '/home/ulaval.ca/amngb2/projects/ul-val-prj-def-
     config_path,
     plotting=True,
 )"""
-videos=["/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314.mp4"]
+videos=["/home/ulaval.ca/amngb2/projects/ul-val-prj-def-erpaq33/sophie/cdpq/deeplabcut/CDPQ_test-CDPQ_experiment-2022-02-22/videos/GR77_20200512_111314C.mp4"]
 deeplabcut.analyze_videos(
     config_path,
     videos,
