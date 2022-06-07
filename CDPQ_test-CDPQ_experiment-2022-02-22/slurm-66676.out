@@ -91,3 +91,4 @@ This message will be only logged once.
 /project/166600234/sophie/our_virtual_envs/dlc/venv/lib/python3.8/site-packages/tf_slim/layers/layers.py:684: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
   outputs = layer.apply(inputs, training=is_training)
 iteration: 500 loss: 0.0285 scmap loss: 0.0243 locref loss: 0.0011 limb loss: 0.0031 lr: 0.0001
+iteration: 1000 loss: 0.0121 scmap loss: 0.0107 locref loss: 0.0003 limb loss: 0.0011 lr: 0.0001
