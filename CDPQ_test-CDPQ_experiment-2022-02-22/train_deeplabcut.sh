@@ -7,7 +7,7 @@
 
 #source ../../our_virtual_envs/dlc/venv/bin/activate
 source ../../../our_virtual_envs/dlc/venv/bin/activate
-python test_deeplabcut.py
+python test_evaluation.py
 
 #make sure you have done source deeplabcut/venv/bin/activate and you are in the directory of the project
 # sq for consulting if the training is already done 
